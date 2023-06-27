@@ -16,9 +16,9 @@ Future<Stats> fetchStats() async {
 }
 
 class Stats {
-  final String fg3a;
-  final String fg3m;
-  final String ast;
+  final int fg3a;
+  final int fg3m;
+  final int ast;
 
   const Stats({
     required this.fg3a,
