@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
             future: futureStats,
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                return Text(snapshot.data!.fg3m);
+                return Text(snapshot.data!.fg3m.toString());
               } else if (snapshot.hasError) {
                 return Text('${snapshot.error}');
               }
